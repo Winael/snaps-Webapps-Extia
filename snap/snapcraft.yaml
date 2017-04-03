@@ -1,0 +1,36 @@
+name: extia-webapp
+version: '1.0'
+summary: Extia webapp
+description: |
+  Webapp version of the Extia web portal.
+licence: GNU/GPL v3
+icon: ./gui/extia.png
+
+grade: stable
+confinement: strict
+
+parts:
+  webapp-container:
+    plugin: nil    
+    after: [desktop-ubuntu-app-platform, webapp-helper]
+    
+plugs:
+  browser-sandbox:
+    interface: browser-support
+    allow-sandbox: false
+  platform:
+    interface: content
+    content: ubuntu-app-platform1
+    target: ubuntu-app-platform
+    default-provider: ubuntu-app-platform
+    
+apps:
+  extia-webapp:
+    command: webapp-launcher --webappUrlPatterns=https?://intra.extia.fr/*,http://www.extia.fr/* http://www.extia.fr/
+    plugs:
+      - browser-sandbox
+      - network
+      - opengl
+      - unity7
+      - mir
+

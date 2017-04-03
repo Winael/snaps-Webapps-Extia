@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+Exec=extia-webapp
+Name=Extia
+Icon=${SNAP}/meta/gui/extia.png

@@ -4,7 +4,7 @@ summary: Extia webapp
 description: |
   Webapp version of the Extia web portal.
 licence: GNU/GPL v3
-icon: ./gui/extia.png
+icon: gui/extia.png
 
 grade: stable
 confinement: strict

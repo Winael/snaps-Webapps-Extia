@@ -15,6 +15,7 @@ parts:
     after: [desktop-ubuntu-app-platform, webapp-helper]
     
 plugs:
+
   browser-sandbox:
     interface: browser-support
     allow-sandbox: false

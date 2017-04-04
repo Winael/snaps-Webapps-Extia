@@ -1,10 +1,9 @@
 name: extia-webapp
-version: '1.0'
+version: '1.1'
 summary: Extia webapp
 description: |
   Webapp version of the Extia web portal.
-licence: GNU/GPL v3
-icon: gui/extia.png
+icon: snap/gui/extia.png
 
 grade: stable
 confinement: strict
@@ -30,8 +29,8 @@ apps:
     command: webapp-launcher --webappUrlPatterns=https?://intra.extia.fr/*,http://www.extia.fr/* http://www.extia.fr/
     plugs:
       - browser-sandbox
+      - home
       - network
       - opengl
       - unity7
       - mir
-

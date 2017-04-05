@@ -35,3 +35,5 @@ apps:
       - unity7
       - mir
       - home
+      - screen-inhibit-control
+      - alsa

@@ -35,4 +35,5 @@ apps:
       - unity7
       - mir
       - screen-inhibit-control
-      - alsa
+      - pulseaudio
+      - content

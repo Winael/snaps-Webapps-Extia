@@ -9,6 +9,7 @@ grade: stable
 confinement: strict
 
 parts:
+  
   webapp-container:
     plugin: nil    
     after: [desktop-ubuntu-app-platform, webapp-helper]
@@ -18,6 +19,7 @@ plugs:
   browser-sandbox:
     interface: browser-support
     allow-sandbox: false
+  
   platform:
     interface: content
     content: ubuntu-app-platform1
@@ -25,6 +27,7 @@ plugs:
     default-provider: ubuntu-app-platform
     
 apps:
+  
   extia-webapp:
     command: webapp-launcher --webappUrlPatterns=https?://intra.extia.fr/*,http://www.extia.fr/* http://www.extia.fr/
     plugs:

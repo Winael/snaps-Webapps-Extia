@@ -39,4 +39,3 @@ apps:
       - mir
       - screen-inhibit-control
       - pulseaudio
-      - content
